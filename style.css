@@ -318,3 +318,116 @@ body {
     font-weight: bold;
     text-align: center;
   }
+
+/* About Page Mobile Styles */
+
+.about-hero-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  height: 98vh;
+  background-image: url('./assets/images/mobile-header-background.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 2% 5%;
+}
+
+.contact-us {
+  font-size: 0.7rem;
+  display: inline-block;
+  /* width: 70%; */
+  padding: 2% 15%;
+  align-self: center;
+  text-align: center;
+}
+
+.contact-email {
+  font-size: 0.7rem;
+  display: inline-block;
+  padding: 2% 15%;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.hackathon-logo {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+ padding: 2% 5%;
+ height: 90%;
+ border-bottom: 1px solid black;
+}
+
+.hackathon-logo-title {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.hackathon-logo hr {
+    background: #ec240d;
+    width: 20%;
+    margin: 1% 0;
+    border: 1px solid #ec240d;
+    margin-bottom: 1.5rem;
+}
+
+.logo-design {
+  font-size: 0.7rem;
+  width: 80%;
+}
+
+.hackathon-logo-img {
+  /* position: absolute; */
+  border: solid 1.5px black;
+  width: 85%;
+  height: 30%;
+}
+
+.hackathon-logo-image {
+  position: relative;
+  top: 50;
+}
+
+.past-event-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2% 5%;
+    height: 100%;
+}
+
+.past-event-title {
+      font-size: 1.3rem;
+    margin-top: 1rem;
+}
+  
+  .past-event-section hr {
+      background: #ec240d;
+      width: 20%;
+      margin: 1% 0;
+      border: 1px solid #ec240d;
+      margin-bottom: 1.5rem;
+  }
+  
+  .past-info {
+    font-size: 0.7rem;
+    width: 80%;
+  }
+
+.past-event-images {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 70%;
+  width: 90%;
+  align-items: center;
+}
+
+.past-event-images img {
+  border: 1px solid black;
+  height: 35%;
+  width: 85%;
+}
