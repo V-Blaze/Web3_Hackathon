@@ -176,9 +176,10 @@ body {
   grid-template-columns: 2rem 5rem 2fr;
   align-items: center;
   /* justify-content: center; */
-  /* width: 99%; */
+  width: 99%;
   height: 99px;
-  background-color: rgba(56, 58, 63, 0.5);
+ /* width: 80%; */
+  background-color: rgba(56, 58, 63, 0.8);
   padding-left: 1rem;
 }
 
@@ -210,7 +211,7 @@ body {
   padding: 6% 4%;
   display: flex;
   flex-direction: column;
-  min-height: 110%;
+  height: 110%;
 }
 
 .featured-speakers {
@@ -285,3 +286,35 @@ body {
   font-size: 0.5rem;
 }
 
+.partner-footer-mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(53, 58, 64, 0.5);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .partner-logos {
+   display: grid;
+   grid-template-columns: 33% 33% 33%;
+   align-items: center;
+   justify-content: center;
+  }
+  
+  .partner-logos img {
+    height: 70%;
+    width: 70%;
+    padding: 5%;
+  } 
+  
+  .mobile-footer {
+    padding: 10%;
+  }
+  
+  .mobile-footer span {
+    font-size: 0.7rem;
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+  }
