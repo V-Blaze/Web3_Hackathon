@@ -1,0 +1,23 @@
+{
+  "name": "web3_hackathon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/V-Blaze/Web3_Hackathon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/V-Blaze/Web3_Hackathon/issues"
+  },
+  "homepage": "https://github.com/V-Blaze/Web3_Hackathon#readme",
+  "devDependencies": {
+    "hint": "^7.1.3"
+  }
+}
