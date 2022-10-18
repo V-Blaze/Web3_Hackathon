@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   gap: 5%;
   height: 98vh;
-  background-image: url('./assets/images/mobile-header-background.png');
+  background-image: url('./assets/images/web3-header-bg.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 2% 5%;
@@ -123,8 +123,9 @@ body {
   padding: 6% 4%;
   display: flex;
   flex-direction: column;
-  background-image: url('./assets/images/program-section-background.svg');
-  background-color: #272a31;
+  background-image: url('./assets/images/program-section-bg.png');
+  background-size: 100% 100%;
+
   color: #fff;
 }
 
@@ -133,6 +134,8 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  background-color: rgba(56,52,73,0.7);
+  border-radius: 30px;
 }
 
 .program-title {
@@ -484,7 +487,7 @@ body {
 } */
 
 .menu a:hover {
-  color: #ec5242;
+  color: black;
 }
 
 @media (max-width: 768px) {
@@ -498,19 +501,22 @@ body {
     position: absolute;
     flex-direction: column;
     top: 0;
+    /* left: -6%; */
     left: -1000%;
     height: 100vh;
-    width: 100%;
-    background-color: rgb(96, 112, 255, 0.7);
+    width: 70%;
+    background-color: rgb(236, 82, 66, 0.7);
     z-index: 29;
     padding-top: 30%;
     transition: 0.3s;
     margin-top: 0;
     backdrop-filter: blur(8px);
+    padding-left: 1rem;
   }
   
   .menu.active {
-    left: 0;
+    top: -5%;
+    left: -6%;
   }
   
   .menu li {
@@ -518,9 +524,10 @@ body {
   }
   
   .menu a {
+    text-decoration: none;
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 1rem;
     line-height: 44px;
     color: #fff;
   }
@@ -728,6 +735,10 @@ body {
     flex-direction: row;
     align-items: start;
     justify-content: center;
+  }
+
+  .menu a:hover {
+    color: #ec5242;
   }
 }
 
