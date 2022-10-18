@@ -1,0 +1,32 @@
+[
+    {
+        "name": "OG Arabian Prince",
+        "qualifications": "Founder, iNov8 Next Open Labs",
+        "biography": "Producer, DJ, technologist, Pro Gamer, Animator and Futurist, Founding member of the Rock and Roll Hall of Fame group N.W.A., producer of Grammy nominated #1 hit song Supersonic.",
+        "image": "./assets/images/OG-Arabian-Prince.jpg"
+    },
+    {
+        "name": "Scott Page",
+        "qualifications": "CEO, Think:EXP",
+        "biography": "He is currently on a mission of empowering artists and technologists to collectively elevate culture with THINK:NFT, an NFT ecosystem of top NFT talent and community events",
+        "image": "./assets/images/Scott-Page.jpg"
+    },
+    {
+        "name": "Yat Siu",
+        "qualifications": "Co-Founder and Executive Chairman, Animoca Brands",
+        "biography": "Mr. Siu has been an early advocate for the use of blockchain and non-fungible tokens (NFTs) in the gaming industry, to allow gamers to enjoy true ownership of their game assets, data, and equity.",
+        "image": "./assets/images/Yat-Siu.jpg"
+    },
+    {
+        "name": "Balsam Danhach",
+        "qualifications": "CO – MENA, FTX",
+        "biography": "In July 2022, world leading Crypto Exchange FTX recieved full approval to operate a cryptocurrency exchange and clearing house in Dubai, for which Balsam Danhach is leading its intricate operation.",
+        "image": "./assets/images/Balsam-Danhach.jpg"
+    },
+    {
+        "name": "Valentine Blaze",
+        "qualifications": "Founder & CEO of Crypto Ocean Corp.",
+        "biography": "V-Blaze is the Co-founder and COO of The Metalunr decentralized Metaverse, a virtual world where players can create, play, own, govern and monetize their experiences.",
+        "image": "./assets/images/Valentine-Blaze.jpg"
+    }
+]
