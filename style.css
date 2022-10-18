@@ -349,6 +349,9 @@ body {
   padding: 2% 15%;
   text-decoration: underline;
   font-weight: bold;
+  text-align: center;
+  width: 80%;
+  align-self: center;
 }
 
 .hackathon-logo {
@@ -381,15 +384,15 @@ body {
 }
 
 .hackathon-logo-img {
-  /* position: absolute; */
   border: solid 1.5px black;
   width: 85%;
-  height: 30%;
+  height: 260px;
+  border-radius: 10px;
 }
 
 .hackathon-logo-image {
   position: relative;
-  top: 50;
+  width: auto;
 }
 
 .past-event-section {
@@ -429,11 +432,56 @@ body {
   align-items: center;
 }
 
-.past-event-images img {
+.event-1 {
   border: 1px solid black;
+  height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('./assets/images/Past-h-event-1.jpg');
+  background-size: 100% 100%;
+  /* backdrop-filter: blur(8px);
+  background: rgba(65,54,65,0.4); */
+}
+
+.event-2 {
+  border: 1px solid black;
+  height: 200px;
+  width: 300px;
+
+  background-image: url('./assets/images/Past-h-event-2.jpg');
+  background-size: 100% 100%;
+}
+
+.event-img-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(236,82,72,0.5);
+}
+
+.event-year {
+  font-size: 2.1rem;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.event-detail {
+  font-size: 1.1rem;
+  font-weight: bolder;
+  color: #fff;
+}
+
+/* .past-event-images img {
+  border: 1px solid black;
+  height: 200px;
+  width: 300px;
   height: 35%;
   width: 85%;
-}
+} */
 
 .menu a:hover {
   color: #ec5242;
@@ -519,6 +567,8 @@ body {
 
   .logo {
     display: flex;
+    height: 64px;
+    width: 64px;
   }
 
   .menu {
@@ -640,6 +690,44 @@ body {
   }
   .mobile-footer span {
     font-size: 1rem;
+  }
+
+  /* About Page */
+
+  .contact-us {
+    font-size: 1rem;
+    margin: 0 15%;
+    padding-bottom: 8px;
+  }
+  
+  .contact-email {
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .logo-design {
+    font-size: 1.2rem;
+    width: 60%;
+  }
+
+  .past-info {
+    font-size: 1.2rem;
+    width: 70%;
+  }
+
+  .past-event-section {
+    padding-bottom: 0;
+    height: 70%;
+  }
+
+  .past-event-images {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
   }
 }
 
