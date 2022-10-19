@@ -7,7 +7,7 @@
 
 ## Link to loom video
 
-- To view a viedo with a decsription of the project you can click on this [link](https://www.loom.com/share/b7948a3e23e64e81a8f0b631c0484b4b).
+- To view a video with a description of the project you can click on this [link](https://www.loom.com/share/b7948a3e23e64e81a8f0b631c0484b4b).
 
 ## Built With
 
