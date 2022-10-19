@@ -33,7 +33,7 @@
 
 ### Live Demo
 
-- To view a live demo of the project you can click on this [link](https://raw.githack.com/V-Blaze/Web3_Hackathon/Mobile_layout/index.html).
+- To view a live demo of the project you can click on this [link]( https://v-blaze.github.io/Web3_Hackathon/).
 
 ### Getting Started
 

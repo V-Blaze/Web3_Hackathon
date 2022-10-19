@@ -19,7 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 5%;
-  height: 98vh;
+  height: 98%;
   background-image: url('./assets/images/web3-header-bg.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -79,12 +79,12 @@ body {
 }
 
 .headline {
-  height: 80%;
-
-  /* border: 2px solid blue; */
+  min-height: 80%;
+  overflow: clip;
 }
 
 .title {
+  height: 10%;
   font-size: 1rem;
   color: #ec5242;
   padding: 5% 0;
@@ -95,31 +95,40 @@ body {
   color: #ec240d;
   font-weight: 800;
   line-height: 90%;
+  height: 30%;
 
   /* line-height: 36px; */
   margin-bottom: 7%;
+  overflow: clip;
 }
 
 .title-description {
   color: #272a31;
   font-size: 0.9rem;
+
+  /* font-size: 100%; */
   margin-bottom: 2%;
   border: 1px solid #fff;
   padding: 6%;
   background-color: #f7f7f7;
+  height: 30%;
+  overflow: hidden;
 }
 
 .title-date {
   font-size: 1.6rem;
+  height: 15%;
+  overflow: clip;
 }
 
 .title-venue {
   color: #272a31;
   font-size: 0.9rem;
+  height: 10%;
 }
 
 .program-section {
-  /* height: 100%; */
+  min-height: 100%;
   padding: 6% 4%;
   display: flex;
   flex-direction: column;
@@ -200,7 +209,9 @@ body {
   padding: 6% 4%;
   display: flex;
   flex-direction: column;
-  height: 110%;
+  min-height: 130%;
+  overflow: clip;
+  margin-bottom: 10%;
 }
 
 .featured-speakers {
@@ -277,10 +288,8 @@ body {
 .partner-footer-mobile {
   display: flex;
   flex-direction: column;
-  background-color: rgba(53, 58, 64, 0.5);
+  background-color: #414246;
   align-items: center;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
 }
 
 .partner-title {
@@ -302,6 +311,7 @@ body {
   grid-template-columns: 33% 33% 33%;
   align-items: center;
   justify-content: center;
+  min-height: 70%;
 }
 
 .partner-logos img {
@@ -338,17 +348,6 @@ body {
 
 /* About Page Mobile Styles */
 
-/* .about-hero-section {
-  display: flex;
-  flex-direction: column;
-  gap: 5%;
-  height: 98vh;
-  background-image: url('./assets/images/mobile-header-background.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  padding: 2% 5%;
-} */
-
 .contact-us {
   font-size: 0.7rem;
   display: inline-block;
@@ -376,8 +375,8 @@ body {
   align-items: center;
   text-align: center;
   padding: 2% 5%;
-  height: 90%;
   border-bottom: 1px solid black;
+  margin-bottom: 10%;
 }
 
 .hackathon-logo-title {
@@ -402,7 +401,6 @@ body {
 .hackathon-logo-img {
   border: solid 1.5px black;
   width: 85%;
-  height: 260px;
   border-radius: 10px;
 }
 
@@ -417,7 +415,7 @@ body {
   align-items: center;
   text-align: center;
   padding: 2% 5%;
-  height: 100%;
+  margin-bottom: 8%;
 }
 
 .past-event-title {
@@ -613,6 +611,7 @@ body {
 
   .sub-title {
     font-size: 3.1rem;
+    height: 25%;
   }
 
   .title-description {
@@ -630,21 +629,12 @@ body {
   .programs {
     display: grid;
     grid-template-columns: 18% 18% 18% 18% 18%;
-
-    /* gap: 1%; */
   }
 
   .program-item {
     display: grid;
-
-    /* display: flex;
-    flex-direction: column; */
-
-    /* margin: 3% 0; */
     padding-right: 0;
     grid-template-columns: 100%;
-
-    /* row-gap: 3%; */
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -677,8 +667,6 @@ body {
     grid-template-columns: 1fr 1fr;
     row-gap: 19%;
     column-gap: 6%;
-
-    /* height: 95px; */
   }
 
   .speaker-details {
@@ -717,8 +705,6 @@ body {
     font-size: 1rem;
   }
 
-  /* About Page */
-
   .contact-us {
     font-size: 1rem;
     margin: 0 15%;
@@ -745,7 +731,6 @@ body {
 
   .past-event-section {
     padding-bottom: 0;
-    height: 70%;
   }
 
   .past-event-images {
@@ -757,6 +742,18 @@ body {
 
   .menu a:hover {
     color: #ec5242;
+  }
+
+  .partner-about {
+    display: none;
+  }
+
+  #about-footer {
+    background-color: #414246;
+  }
+
+  #about-footer span {
+    color: #fff;
   }
 }
 
@@ -771,6 +768,8 @@ body {
 
   .sub-title {
     font-size: 3.5rem;
+    height: 20%;
+    margin-bottom: 1%;
   }
 
   .title-description {
