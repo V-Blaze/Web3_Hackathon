@@ -28,5 +28,11 @@
         "qualifications": "Founder & CEO of Crypto Ocean Corp.",
         "biography": "V-Blaze is the Co-founder and COO of The Metalunr decentralized Metaverse, a virtual world where players can create, play, own, govern and monetize their experiences.",
         "image": "./assets/images/Valentine-Blaze.jpg"
+    },
+    {
+        "name": "Lennix lai",
+        "qualifications": "Director, OKX",
+        "biography": "Lennix leads the business strategy and operations for OKX internationally. With 15 years of experience in the world of crypto and financial services",
+        "image": "./assets/images/Lennix-lai.png"
     }
 ]
