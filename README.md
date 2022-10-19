@@ -7,7 +7,7 @@
 
 ## Link to loom video
 
-- To view a viedo with a decsription of the project you can click on this [link]().
+- To view a viedo with a decsription of the project you can click on this [link](https://www.loom.com/share/b7948a3e23e64e81a8f0b631c0484b4b).
 
 ## Built With
 
@@ -33,7 +33,7 @@
 
 ### Live Demo
 
-- To view a live demo of the project you can click on this [link](https://admirable-cendol-446843.netlify.app).
+- To view a live demo of the project you can click on this [link](https://raw.githack.com/V-Blaze/Web3_Hackathon/Mobile_layout/index.html).
 
 ### Getting Started
 

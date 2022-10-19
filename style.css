@@ -125,7 +125,6 @@ body {
   flex-direction: column;
   background-image: url('./assets/images/program-section-bg.png');
   background-size: 100% 100%;
-
   color: #fff;
 }
 
@@ -134,7 +133,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: rgba(56,52,73,0.7);
+  background-color: rgba(56, 52, 73, 0.7);
   border-radius: 30px;
 }
 
@@ -284,7 +283,6 @@ body {
   border-top-right-radius: 15px;
 }
 
-
 .partner-title {
   font-size: 1.3rem;
   margin-top: 2%;
@@ -332,6 +330,7 @@ body {
 .mobile-footer span {
   font-size: 0.7rem;
   display: block;
+
   /* color: #fff; */
   font-weight: bold;
   text-align: center;
@@ -458,6 +457,7 @@ body {
   justify-content: center;
   background-image: url('./assets/images/Past-h-event-1.jpg');
   background-size: 100% 100%;
+
   /* backdrop-filter: blur(8px);
   background: rgba(65,54,65,0.4); */
 }
@@ -466,7 +466,6 @@ body {
   border: 1px solid black;
   height: 200px;
   width: 300px;
-
   background-image: url('./assets/images/Past-h-event-2.jpg');
   background-size: 100% 100%;
 }
@@ -477,7 +476,7 @@ body {
   justify-content: center;
   height: 100%;
   width: 100%;
-  background-color: rgba(236,82,72,0.5);
+  background-color: rgba(236, 82, 72, 0.5);
 }
 
 .event-year {
@@ -515,6 +514,7 @@ body {
     position: absolute;
     flex-direction: column;
     top: 0;
+
     /* left: -6%; */
     left: -1000%;
     height: 100vh;
@@ -527,16 +527,16 @@ body {
     backdrop-filter: blur(8px);
     padding-left: 1rem;
   }
-  
+
   .menu.active {
     top: -5%;
     left: -6%;
   }
-  
+
   .menu li {
     list-style: none;
   }
-  
+
   .menu a {
     text-decoration: none;
     font-style: normal;
@@ -610,20 +610,19 @@ body {
   .title {
     font-size: 2rem;
   }
-  
+
   .sub-title {
     font-size: 3.1rem;
-
   }
-  
+
   .title-description {
     font-size: 1.3rem;
   }
-  
+
   .title-date {
     font-size: 1.9rem;
   }
-  
+
   .title-venue {
     font-size: 1.2rem;
   }
@@ -631,16 +630,20 @@ body {
   .programs {
     display: grid;
     grid-template-columns: 18% 18% 18% 18% 18%;
+
     /* gap: 1%; */
   }
 
   .program-item {
     display: grid;
+
     /* display: flex;
     flex-direction: column; */
+
     /* margin: 3% 0; */
     padding-right: 0;
     grid-template-columns: 100%;
+
     /* row-gap: 3%; */
     text-align: center;
     align-items: center;
@@ -654,7 +657,7 @@ body {
   }
 
   .program-name {
-    height: 2rem
+    height: 2rem;
   }
 
   .program-description {
@@ -674,6 +677,7 @@ body {
     grid-template-columns: 1fr 1fr;
     row-gap: 19%;
     column-gap: 6%;
+
     /* height: 95px; */
   }
 
@@ -688,7 +692,7 @@ body {
     width: 90px;
     background-size: 80% 80%;
   }
-  
+
   .speaker-image {
     position: absolute;
     width: 90%;
@@ -696,19 +700,19 @@ body {
     right: 0;
     bottom: 0;
   }
-  
+
   .speaker-name {
     font-size: 1.3rem;
   }
-  
+
   .speaker-qualifications {
     font-size: 0.8rem;
   }
 
-  
   .speaker-brief {
     font-size: 0.6rem;
   }
+
   .mobile-footer span {
     font-size: 1rem;
   }
@@ -720,7 +724,7 @@ body {
     margin: 0 15%;
     padding-bottom: 8px;
   }
-  
+
   .contact-email {
     font-size: 0.9rem;
     margin: 0;
@@ -764,20 +768,19 @@ body {
   .title {
     font-size: 2.3rem;
   }
-  
+
   .sub-title {
     font-size: 3.5rem;
-
   }
-  
+
   .title-description {
     font-size: 1.5rem;
   }
-  
+
   .title-date {
     font-size: 2.1rem;
   }
-  
+
   .title-venue {
     font-size: 1.4rem;
   }

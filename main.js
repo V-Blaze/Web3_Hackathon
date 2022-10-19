@@ -3,23 +3,22 @@ const menu = document.querySelector('.menu');
 const speakerList = document.querySelector('.speaker-list');
 
 hamburger.addEventListener('click', (e) => {
-	e.preventDefault();
-	console.log('clicked');
-	hamburger.classList.toggle('active');
-	menu.classList.toggle('active');
+  e.preventDefault();
+  hamburger.classList.toggle('active');
+  menu.classList.toggle('active');
 });
 
-document.querySelectorAll('.nav-link').forEach((nav) =>
-	nav.addEventListener('click', () => {
-		hamburger.classList.remove('active');
-		menu.classList.remove('active');
-	})
-);
+document.querySelectorAll('.nav-link').forEach((nav) => nav.addEventListener('click', () => {
+  hamburger.classList.remove('active');
+  menu.classList.remove('active');
+}));
 
-const displaySpeakers = ({ name, qualifications, biography, image }) => {
-	const div = document.createElement('div');
-	div.className = 'speaker-details';
-	div.innerHTML = `
+const displaySpeakers = ({
+  name, qualifications, biography, image,
+}) => {
+  const div = document.createElement('div');
+  div.className = 'speaker-details';
+  div.innerHTML = `
     <div class="speaker-img">
         <img src="${image}" alt="${name}" class="speaker-image">
     </div>
@@ -37,21 +36,21 @@ const displaySpeakers = ({ name, qualifications, biography, image }) => {
     </div>
     `;
 
-	return div;
+  return div;
 };
 
 const getSpeakers = async () => {
-	const response = await fetch('./speakers.json');
+  const response = await fetch('./speakers.json');
 
-	try {
-		const data = await response.json();
+  try {
+    const data = await response.json();
 
-		data.forEach((speaker, index) => {
-			speakerList.append(displaySpeakers(speaker));
-		});
-	} catch (error) {
-		// console.log(error);
-	}
+    data.forEach((speaker) => {
+      speakerList.append(displaySpeakers(speaker));
+    });
+  } catch (error) {
+    // console.log(error);
+  }
 };
 
 getSpeakers();
