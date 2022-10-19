@@ -1,0 +1,799 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: lato, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  background-color: #fff;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  height: 98%;
+  background-image: url('./assets/images/web3-header-bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 2% 5%;
+
+  /* border: 2px solid blue; */
+}
+
+.top-menu {
+  display: none;
+}
+
+.logo {
+  display: none;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: start;
+  padding: 2% 5%;
+  height: 10%;
+  width: 100%;
+}
+
+.hamburger {
+  z-index: 40;
+  margin-right: 8%;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #272a31;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: #fff;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: #fff;
+}
+
+.menu li:last-child {
+  border: 4px solid #ec5242;
+  padding: 0.5rem;
+}
+
+.headline {
+  min-height: 80%;
+  overflow: clip;
+}
+
+.title {
+  height: 8%;
+  font-size: 1rem;
+  color: #ec5242;
+  padding: 2% 0;
+  margin-bottom: 4%;
+}
+
+.sub-title {
+  font-size: 2.1rem;
+  color: #ec240d;
+  font-weight: 800;
+  line-height: 90%;
+  height: 30%;
+  margin-bottom: 7%;
+  overflow: clip;
+}
+
+.title-description {
+  color: #272a31;
+  font-size: 0.9rem;
+  margin-bottom: 2%;
+  border: 1px solid #fff;
+  padding: 6%;
+  background-color: #f7f7f7;
+  height: 30%;
+  overflow: hidden;
+}
+
+.title-date {
+  font-size: 1.6rem;
+  height: 12%;
+  overflow: clip;
+}
+
+.title-venue {
+  color: #272a31;
+  font-size: 0.9rem;
+  height: 10%;
+}
+
+.program-section {
+  min-height: 100%;
+  padding: 6% 4%;
+  display: flex;
+  flex-direction: column;
+  background-image: url('./assets/images/program-section-bg.png');
+  background-size: 100% 100%;
+  color: #fff;
+}
+
+.main-program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(56, 52, 73, 0.7);
+  border-radius: 30px;
+}
+
+.program-title {
+  font-size: 1.3rem;
+  margin-top: 2%;
+}
+
+.main-program hr {
+  background: #ec240d;
+  width: 20%;
+  margin: 1% 0;
+  border: 1px solid #ec240d;
+}
+
+.programs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.program-item {
+  display: grid;
+  grid-template-columns: 2rem 5rem 2fr;
+  align-items: center;
+
+  /* justify-content: center; */
+  width: 99%;
+  height: 99px;
+
+  /* width: 80%; */
+  background-color: rgba(56, 58, 63, 0.8);
+  padding-left: 1rem;
+}
+
+.program-name {
+  font-size: 0.8rem;
+  color: #ec5242;
+
+  /* align-self: center; */
+}
+
+.program-description {
+  font-size: 0.7rem;
+  text-overflow: ellipsis;
+}
+
+.program-btn {
+  margin: 5% 0;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ec5242;
+  height: 42px;
+  padding-top: 12px;
+  text-align: center;
+  width: 80%;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.speaker-section {
+  padding: 6% 4%;
+  display: flex;
+  flex-direction: column;
+  min-height: 130%;
+  overflow: clip;
+  margin-bottom: 10%;
+}
+
+.featured-speakers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.speaker-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 8%;
+}
+
+.speaker-title {
+  font-size: 1.3rem;
+  margin-top: 2%;
+}
+
+.featured-speakers hr {
+  background: #ec240d;
+  width: 20%;
+  margin: 2% 0;
+  border: 1px solid #ec240d;
+  margin-bottom: 7%;
+}
+
+.speaker-details {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  column-gap: 2rem;
+  height: 90px;
+}
+
+.speaker-img {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  background-image: url('./assets/images/pattern.jpg');
+  background-repeat: no-repeat;
+  background-size: 70% 70%;
+}
+
+.speaker-image {
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  right: 0;
+  bottom: 0;
+}
+
+.speaker-name {
+  font-size: 1rem;
+}
+
+.speaker-qualifications {
+  font-size: 0.7rem;
+  color: #ec5242;
+  font-style: italic;
+}
+
+.speaker-info hr {
+  background: #272a31;
+  width: 20%;
+  border: 0.3px solid #272a31;
+  margin: 4% 0;
+}
+
+.speaker-brief {
+  font-size: 0.5rem;
+}
+
+.partner-footer-mobile {
+  display: flex;
+  flex-direction: column;
+  background-color: #414246;
+  align-items: center;
+}
+
+.partner-title {
+  font-size: 1.3rem;
+  margin-top: 2%;
+  color: #fff;
+}
+
+.partner-footer-mobile hr {
+  background: #ec240d;
+  width: 10%;
+  margin: 2% 0;
+  border: 1px solid #ec240d;
+  margin-bottom: 2%;
+}
+
+.partner-logos {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  align-items: center;
+  justify-content: center;
+  min-height: 70%;
+}
+
+.partner-logos img {
+  height: 70%;
+  width: 70%;
+  padding: 5%;
+}
+
+.mobile-footer {
+  height: 150px;
+  display: grid;
+  grid-template-columns: 20% 60%;
+  align-items: center;
+  justify-content: center;
+  padding: 2% 10%;
+
+  /* padding: 10%; */
+}
+
+.footer-logo {
+  display: flex;
+  height: 64px;
+  width: 64px;
+}
+
+.mobile-footer span {
+  font-size: 0.7rem;
+  display: block;
+
+  /* color: #fff; */
+  font-weight: bold;
+  text-align: center;
+}
+
+/* About Page Mobile Styles */
+
+.contact-us {
+  font-size: 0.7rem;
+  display: inline-block;
+
+  /* width: 70%; */
+  padding: 2% 15%;
+  align-self: center;
+  text-align: center;
+}
+
+.contact-email {
+  font-size: 0.7rem;
+  display: inline-block;
+  padding: 2% 15%;
+  text-decoration: underline;
+  font-weight: bold;
+  text-align: center;
+  width: 80%;
+  align-self: center;
+}
+
+.hackathon-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2% 5%;
+  border-bottom: 1px solid black;
+  margin-bottom: 10%;
+}
+
+.hackathon-logo-title {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.hackathon-logo hr {
+  background: #ec240d;
+  width: 20%;
+  margin: 1% 0;
+  border: 1px solid #ec240d;
+  margin-bottom: 1.5rem;
+}
+
+.logo-design {
+  font-size: 0.7rem;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.hackathon-logo-img {
+  border: solid 1.5px black;
+  width: 85%;
+  border-radius: 10px;
+}
+
+.hackathon-logo-image {
+  position: relative;
+  width: auto;
+}
+
+.past-event-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2% 5%;
+  margin-bottom: 8%;
+}
+
+.past-event-title {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.past-event-section hr {
+  background: #ec240d;
+  width: 20%;
+  margin: 1% 0;
+  border: 1px solid #ec240d;
+  margin-bottom: 1.5rem;
+}
+
+.past-info {
+  font-size: 0.7rem;
+  width: 80%;
+}
+
+.past-event-images {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 70%;
+  width: 90%;
+  align-items: center;
+}
+
+.event-1 {
+  border: 1px solid black;
+  height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('./assets/images/Past-h-event-1.jpg');
+  background-size: 100% 100%;
+
+  /* backdrop-filter: blur(8px);
+  background: rgba(65,54,65,0.4); */
+}
+
+.event-2 {
+  border: 1px solid black;
+  height: 200px;
+  width: 300px;
+  background-image: url('./assets/images/Past-h-event-2.jpg');
+  background-size: 100% 100%;
+}
+
+.event-img-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(236, 82, 72, 0.5);
+}
+
+.event-year {
+  font-size: 2.1rem;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.event-detail {
+  font-size: 1.1rem;
+  font-weight: bolder;
+  color: #fff;
+}
+
+/* .past-event-images img {
+  border: 1px solid black;
+  height: 200px;
+  width: 300px;
+  height: 35%;
+  width: 85%;
+} */
+
+.menu a:hover {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    position: sticky;
+    top: 0;
+  }
+
+  .menu {
+    display: fixed;
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+
+    /* left: -6%; */
+    left: -1000%;
+    height: 100vh;
+    width: 70%;
+    background-color: rgb(236, 82, 66, 0.7);
+    z-index: 29;
+    padding-top: 30%;
+    transition: 0.3s;
+    margin-top: 0;
+    backdrop-filter: blur(8px);
+    padding-left: 1rem;
+  }
+
+  .menu.active {
+    top: -5%;
+    left: -6%;
+  }
+
+  .menu li {
+    list-style: none;
+  }
+
+  .menu a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 44px;
+    color: #fff;
+  }
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .hero-section {
+    padding: 0;
+  }
+
+  .headline {
+    padding: 2% 15%;
+  }
+
+  .top-menu {
+    display: flex;
+    list-style: none;
+    background-color: #272a31;
+    align-items: center;
+    justify-content: end;
+    gap: 3%;
+    padding: 1% 2%;
+  }
+
+  .top-nav-link {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .nav-bar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+    padding: 0 15%;
+  }
+
+  .logo {
+    display: flex;
+    height: 64px;
+    width: 64px;
+  }
+
+  .menu {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    align-items: center;
+    justify-content: end;
+    gap: 3%;
+  }
+
+  .nav-link {
+    color: #272a31;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .sub-title {
+    font-size: 2.7rem;
+    height: 25%;
+  }
+
+  .title-description {
+    font-size: 1.1rem;
+  }
+
+  .title-date {
+    font-size: 1.9rem;
+  }
+
+  .title-venue {
+    font-size: 1.2rem;
+  }
+
+  .programs {
+    display: grid;
+    grid-template-columns: 18% 18% 18% 18% 18%;
+  }
+
+  .program-item {
+    display: grid;
+    padding-right: 0;
+    grid-template-columns: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 16rem;
+    overflow: hidden;
+  }
+
+  .material-symbols-outlined {
+    height: 3rem;
+  }
+
+  .program-name {
+    height: 2rem;
+  }
+
+  .program-description {
+    height: 10rem;
+  }
+
+  .program-btn {
+    text-decoration: underline;
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
+  .speaker-list {
+    padding: 1% 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 19%;
+    column-gap: 6%;
+  }
+
+  .speaker-details {
+    grid-template-columns: 6rem 1fr;
+    column-gap: 2rem;
+    height: 100px;
+  }
+
+  .speaker-img {
+    height: 90px;
+    width: 90px;
+    background-size: 80% 80%;
+  }
+
+  .speaker-image {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    right: 0;
+    bottom: 0;
+  }
+
+  .speaker-name {
+    font-size: 1.3rem;
+  }
+
+  .speaker-qualifications {
+    font-size: 0.8rem;
+  }
+
+  .speaker-brief {
+    font-size: 0.6rem;
+  }
+
+  .mobile-footer span {
+    font-size: 1rem;
+  }
+
+  .contact-us {
+    font-size: 1rem;
+    margin: 0 15%;
+    padding-bottom: 8px;
+  }
+
+  .contact-email {
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .logo-design {
+    font-size: 1.2rem;
+    width: 60%;
+  }
+
+  .past-info {
+    font-size: 1.2rem;
+    width: 70%;
+  }
+
+  .past-event-section {
+    padding-bottom: 0;
+  }
+
+  .past-event-images {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .menu a:hover {
+    color: #ec5242;
+  }
+
+  .partner-about {
+    display: none;
+  }
+
+  #about-footer {
+    background-color: #414246;
+  }
+
+  #about-footer span {
+    color: #fff;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-section {
+    height: 111vh;
+  }
+
+  .title {
+    font-size: 2.3rem;
+  }
+
+  .sub-title {
+    font-size: 3.1rem;
+    height: 20%;
+    margin-bottom: 1%;
+  }
+
+  .title-description {
+    font-size: 1.1rem;
+  }
+
+  .title-date {
+    font-size: 2.1rem;
+  }
+
+  .title-venue {
+    font-size: 1.4rem;
+  }
+
+  .program-name {
+    font-size: 0.9rem;
+  }
+
+  .program-description {
+    font-size: 0.9rem;
+  }
+
+  .speaker-brief {
+    font-size: 0.8rem;
+  }
+
+  .mobile-footer span {
+    font-size: 1.4rem;
+  }
+}
